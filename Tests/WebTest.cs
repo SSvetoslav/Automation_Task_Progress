@@ -72,7 +72,7 @@ namespace Progress.Tests
                 if (TestContext.CurrentContext.Result.Outcome.Status != TestStatus.Passed)
                 {
                     string fileName = Regex.Replace(TestContext.CurrentContext.Test.Name, "[^a-zA-Z0-9_]+", "");
-                    var path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.FullName + "\\Screenshots";
+                    var path = Directory.GetParent(Environment.CurrentDirectory).Parent.Parent.Parent.FullName;
                     var ss = ((ITakesScreenshot)Driver).GetScreenshot();
                     ss.SaveAsFile(path + "\\" + fileName + DateTime.Now.ToString("dd-MM-yyyy") + ".png");
 

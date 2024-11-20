@@ -35,7 +35,6 @@ namespace Progress.Tests.UI.Negatives
             contactPage.AsserErrorMessageInvalidEmailIsDisplayed();
         }
 
-        // Error message for I am ... field is not presented for EN, DE, NL, FR, PT, CS, JP, TW
         [Test, Order(2)]
         public void Check_All_ErrorMessages_Are_Presented_When_Submit_Empty_ContactForm()
         {
